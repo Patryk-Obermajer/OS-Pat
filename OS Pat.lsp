@@ -4,17 +4,19 @@
   (setq scmde (getvar "cmdecho"))
   (setvar "cmdecho" 0)
   (setq pt1 (getpoint "\nSelect point to co-ordinate: "))
-  (alert (strcat "Your coordinates have been copied to Clipboard:\n\tX="(rtos(car pt1)) ", Y=" (rtos(cadr pt1)) "\n\nPaste in X (Easting) field"))
 
+ (setq gridRef "https://gridreferencefinder.com/index.php?x=")
+;;;
 (vlax-invoke
     (vlax-get (vlax-get (vlax-create-object "htmlfile") 'ParentWindow) 'ClipBoardData)
     'setData
     "TEXT"
     (strcat (rtos(car pt1)) "," (rtos(cadr pt1))
 )
+  (setq weblink (strcat gridRef (rtos(car pt1)) "&y=" (rtos(cadr pt1))))
+  (princ "\n")
+  (princ weblink)
 )
- (startapp "explorer" "https://gridreferencefinder.com/")
+ (command-s "_browser" weblink)
  (setvar "cmdecho" scmde)
 )
-
-
