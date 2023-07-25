@@ -4,7 +4,7 @@ This AutoLISP routine bridges the gap between AutoCAD and external mapping servi
 ### How to use
 1. Download the LISP file.
 2. Load the LISP file into your AutoCAD session by typing 'Appload' and selecting OS Pat.lsp. You can also drag and drop the script into your AutoCAD session.
-3. Use the command OSPAT to automatically view the coordinated point of interest in Grid Reference Finder.
+3. Use the command OSPAT to automatically view the point of interest in Grid Reference Finder.
 
 ## Usage
 
