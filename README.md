@@ -2,8 +2,8 @@
 ## Overview
 This AutoLISP routine bridges the gap between AutoCAD and external mapping services, like Grid Reference Finder and Google Maps. The script facilitates coordination by enabling you to pull coordinated points directly from a AutoCAD drawing and view them in Grid Reference Finder, Google, and Streetview.
 ### How to use
-1. Clone this repository or download the LISP file.
-2. Load the LISP file into your AutoCAD session.
+1. Download the LISP file.
+2. Load the LISP file into your AutoCAD session by typing 'Appload' and selecting OS Pat.lsp. You can also drag and drop the script into your AutoCAD session.
 3. Use the command OSPAT to automatically view the coordinated point of interest in Grid Reference Finder.
 
 ## Usage
