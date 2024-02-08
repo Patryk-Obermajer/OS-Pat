@@ -8,4 +8,4 @@ This AutoLISP routine helps access external mapping services (Grid Reference Fin
 
 ## Usage
 
-You can call this script in AutoCAD by using the command `OSPAT`. You'll be asked to select a point in the drawing. After confirming the point, the script will automatically open your default web browser and show the chosen point in Grid Reference Finder, which also takes you to Google Maps and Streetview.
+You can call this script in AutoCAD by using the command `OSPAT`. You'll be asked to select a point in the drawing. After confirming the point, the script will automatically open your default web browser and show the chosen point in Grid Reference Finder, which then can take you to Google Maps and Streetview, or to any other destination your mind conjures...
